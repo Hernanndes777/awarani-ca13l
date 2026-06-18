@@ -74,17 +74,17 @@ body {
 /* bg foto placeholder — substitua url() aqui */
 .hero-bg {
   position: absolute; inset: 0;
-  /* background-image: url('hero.jpg'); */
+  background-image: url('https://awaraniritosancestrais.com/wp-content/uploads/2023/07/IMG_7007-scaled.jpg');
   background-size: cover; background-position: center;
-  opacity: 0; /* mude para 1 quando tiver a foto */
+  opacity: 1;
 }
 .hero-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(30,15,8,.45) 0%,
-    rgba(30,15,8,.55) 50%,
-    rgba(30,15,8,.85) 100%
+    rgba(30,15,8,.65) 0%,
+    rgba(30,15,8,.75) 50%,
+    rgba(30,15,8,.95) 100%
   );
 }
 /* placeholder visual */
@@ -140,10 +140,11 @@ body {
 .hero-badge {
   font-size: 11px; font-weight: 600; letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(245,237,216,.85);
-  border: 1px solid rgba(245,237,216,.3);
+  color: rgba(245,237,216,.95);
+  border: 1px solid rgba(245,237,216,.5);
   padding: 7px 16px; border-radius: 100px;
-  background: rgba(245,237,216,.08);
+  background: rgba(20,10,4,.55);
+  backdrop-filter: blur(4px);
 }
 
 .btn-wpp {
@@ -172,7 +173,11 @@ body {
 
 .hero-urgency {
   margin-top: 14px; font-size: 12px;
-  color: rgba(245,237,216,.45); letter-spacing: 1px;
+  color: rgba(245,237,216,.9); letter-spacing: 1px;
+  background: rgba(20,10,4,.5);
+  backdrop-filter: blur(4px);
+  display: inline-block;
+  padding: 6px 18px; border-radius: 100px;
 }
 
 /* ── BARRA DATA ── */
@@ -423,7 +428,11 @@ section { padding: 80px 24px; }
   color: #fff; margin-bottom: 4px;
 }
 .price-val sup { font-size: 22px; font-weight: 600; vertical-align: super; }
-.price-card.main .price-val { color: var(--vinho); }
+.price-card.main .price-old { font-size: 16px; color: rgba(245,237,216,.4); text-decoration: line-through; margin-bottom: 2px; }
+.price-card.main .price-old { color: rgba(60,40,20,.4); }
+.price-badge { display: inline-block; background: var(--laranja-bg); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1px; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px; text-transform: uppercase; }
+.price-card.main .price-badge { background: var(--terra); }
+.price-val { color: var(--vinho); }
 .price-period { font-size: 12px; color: rgba(245,237,216,.45); margin-bottom: 24px; }
 .price-card.main .price-period { color: var(--cinza-txt); }
 .price-list { list-style: none; margin-bottom: 24px; }
@@ -691,6 +700,22 @@ footer strong { color: rgba(245,237,216,.7); }
 }
 
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1664903958126888');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1664903958126888&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -703,9 +728,7 @@ footer strong { color: rgba(245,237,216,.7); }
 <!-- ════ HERO ════ -->
 <section class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-placeholder">
-    <div class="hero-placeholder-label">📸 Foto principal aqui</div>
-  </div>
+
   <div class="hero-overlay"></div>
 
   <div class="hero-content fi">
@@ -734,7 +757,7 @@ footer strong { color: rgba(245,237,216,.7); }
       Inscreva-se
     </a>
 
-    <p class="hero-urgency">Vagas limitadas · cada círculo mantém sua força e intimidade</p>
+    <p class="hero-urgency">🔥 Desconto especial de 20% · <strong style="color:#ff9a7a">vagas se encerrando</strong> · cada círculo mantém sua força e intimidade</p>
 
     <!-- CONTADOR + VAGAS -->
     <div class="hero-countdown">
@@ -942,7 +965,7 @@ footer strong { color: rgba(245,237,216,.7); }
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item"><img src="https://awaraniritosancestrais.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-08-08-at-12.23.27-1-qsbb152v780qjbmvdywp1shq27fq5v7b9epld356rs.jpeg" loading="lazy" alt="Espaço da imersão" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://awaraniritosancestrais.com/wp-content/uploads/2022/05/photo5134118367525972599.jpg" loading="lazy" alt="Roda de mulheres em cerimônia"></div>
       <div class="gallery-item"><img src="https://awaraniritosancestrais.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-08-08-at-12.23.27-2-qsbb1376tjy5w3ploy3fwsysvfozqgzul5emej7z48.jpeg" loading="lazy" alt="Natureza e área verde" loading="lazy"></div>
       <div class="gallery-item"><img src="https://awaraniritosancestrais.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-08-08-at-12.23.28-qsbb11bifvvl8vsbzxa6rtfvony9b2sdww3nfzargo.jpeg" loading="lazy" alt="Cerimônia ao ar livre" loading="lazy"></div>
       <div class="gallery-item"><img src="https://awaraniritosancestrais.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2024-08-08-at-12.23.27-qsbb16yjkw3b6jk52zpy6s0n8z6gl9erxo0kbn2efc.jpeg" loading="lazy" alt="Sítio Terra do Sol" loading="lazy"></div>
@@ -1259,7 +1282,9 @@ footer strong { color: rgba(245,237,216,.7); }
 
       <div class="price-card">
         <p class="price-label">Transmissão e Formação Completa</p>
-        <p class="price-val"><sup>R$</sup>8.000</p>
+        <span class="price-badge">✦ 20% de desconto — vagas limitadas</span>
+        <p class="price-old"><sup style="font-size:11px">R$</sup>8.000</p>
+        <p class="price-val"><sup>R$</sup>6.400</p>
         <p class="price-period">À vista · PIX CPF 22.718.768/000-138<br>Conta de Awarani Ritos Ancestrais</p>
         <ul class="price-list">
           <li>Todos os 13 encontros com as Guardiãs</li>
@@ -1444,6 +1469,15 @@ function toggleGC(btn) {
   }
 }
 
+</script>
+<script>
+// Dispara evento Lead em todo clique de botão/link que leva ao WhatsApp
+document.addEventListener('click', function(e){
+  var a = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]');
+  if(a && typeof fbq === 'function'){
+    fbq('track', 'Lead');
+  }
+}, true);
 </script>
 </body>
 </html>
